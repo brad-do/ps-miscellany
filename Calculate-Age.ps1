@@ -3,9 +3,9 @@ DadOverflow.com
 
 Date: 21 Jan 2018
 Description: Suppose I want to calculate how old someone was at the time of a particular event, such as when that
-person died?  Well, getting the years old is relatively easy; however, it takes a little bit more effort to the
-remaining months and days after that.  Here's a script that does just that.  A good version two of this might be
-to expose it to a module that can be loaded into a session and then called like any other cmdlet.
+person died?  Well, getting the "years old" is relatively easy; however, it takes a little bit more effort to 
+calculate the remaining months and days after that.  Here's a script that does just that.  A good version two of 
+this might be to expose it to a module that can be loaded into a session and then called like any other cmdlet.
 #>
 
 function Get-AgePhrase($StartDate, $EndDate){
