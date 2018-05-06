@@ -1,0 +1,32 @@
+[
+    {
+        "file":  "C:\\Users\\jdoe\\Music\\AC-DC\\Back in Black\\01_AC-DC_Hells Bells.mp3",
+        "artist":  "AC/DC",
+        "album":  "Back in Black",
+        "album_year":  "1980",
+        "genre":  "Hard Rock \u0026 Metal",
+        "song":  "Hells Bells",
+        "file_size":  "7.25 MB",
+        "length":  "00:05:11"
+    },
+	{
+        "file":  "C:\\Users\\jdoe\\Music\\38 Special\\The Very Best Of The A\u0026M Years (1977-1988)\\01 - Rockin\u0027 Into The Night.mp3",
+        "artist":  "38 Special",
+        "album":  "The Very Best Of The A\u0026M Years (1977-1988)",
+        "album_year":  "2003",
+        "genre":  "Rock",
+        "song":  "Rockin\u0027 Into The Night",
+        "file_size":  "7.56 MB",
+        "length":  "00:03:59"
+    },
+	{
+        "file":  "C:\\Users\\jdoe\\Music\\Billy Idol\\Greatest Hits\\03 - Hot In The City (2001 Digital Remaster).mp3",
+        "artist":  "Billy Idol",
+        "album":  "Greatest Hits",
+        "album_year":  "2001",
+        "genre":  "Rock",
+        "song":  "Hot In The City (2001 Digital Remaster)",
+        "file_size":  "7.16 MB",
+        "length":  "00:03:32"
+    }
+]
