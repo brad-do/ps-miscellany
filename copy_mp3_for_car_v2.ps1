@@ -21,16 +21,8 @@ $flashdrive_size = 14250MB  # my song selections will likely exceed the size of 
 # $genres_to_include = "Pop", "Rock", "Hard Rock & Metal"
 $genres_to_include = "Metal", "Hard Rock & Metal"
 
-$album_artists_to_exclude = "ABBA", "Action Figure Party", "Ace of Base", "Aleks Syntek", "Aterciopelados", "Billie Holiday", "Birdhouse", "Buena Vista Social Club", "Burl Ives", 
-    "Cheralee Dillon", "Crumbacher-Duke", "Disney", "Ednita Nazario", "Enrique Iglesias", "Eros Ramazzotti", "Herbie Mann", "High School Musical Cast", "Hombres G", "Hope Sterling", 
-    "Inti-Illimani", "Jet Circus", "Jon Secada", "Joni Mitchell", "Kid Rock", "Kidz Bop Kids", "Marc Anthony", "Mariah Carey", "Michael Bublé", "Nina", "Norah Jones", "One Direction", 
-    "Resorte", "Riki Michele", "Sam Phillips", "Selena Gomez & the Scene", "Shawn Mendes", "Steve Taylor", "Susana Baca", "The Beach Boys", "The Chemical Brothers", "The Hi-Tops", 
-    "Velocity Girl", "Why Don't We"
-$albums_to_exclude = "Frozen [Deluxe Edition] [Original Motion Picture Soundtrack] Disc 2", "Frozen [Original Motion Picture Soundtrack]", "High School Musical 2 [Original Soundtrack]", 
-    "Victorious- Music from the Hit TV Show", "City of Angels [Original Soundtrack]", "Singles [Original Soundtrack]", "The Smurfs 2- Music from and Inspired By", 
-    "Ricky Martin [1991]", "Disney's Karaoke Series- Camp Rock, Vol. 2- Final Jam", "1960's Happy Days [2004] Disc 1", "1960's Happy Days [2004] Disc 2", 
-    "1960's Happy Days [2004] Disc 3", "Americanos- Latino Life in the United States", "Fabulous 50's [2003 Madacy Box] Disc 3", "Fabulous 50s, Vol. 2", "K-Tel Presents Doo Wop Love", 
-    "Royal at its Best", "The Fabulous 50's [2005 Madacy] Disc 1"
+$album_artists_to_exclude = "ABBA", "Disney", "High School Musical Cast", "The Beach Boys"
+$albums_to_exclude = "Frozen [Original Motion Picture Soundtrack]", "High School Musical 2 [Original Soundtrack]", "The Smurfs 2- Music from and Inspired By"
 
 function Convert-FileSizeToMB($size){
     $return_val = 0
