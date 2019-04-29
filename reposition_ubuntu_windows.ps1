@@ -27,9 +27,10 @@ $screen_height = $left_most_screen.WorkingArea.Height
 $running_ubuntu_pids = Get-Process|?{$_.Name -eq "Ubuntu"}|select Id
 $count = 1
 foreach($uPid in $running_ubuntu_pids){
-    $y = ( ($_ - 1) * ($screen_height / $nbr_of_windows_to_open) )
-    $h = ( $screen_height / $nbr_of_windows_to_open )
+    $y = ( ($count - 1) * ($screen_height / $running_ubuntu_pids.Count) )
+    $h = ( $screen_height / $running_ubuntu_pids.Count )
     Set-Window -ProcessId $app.Id -X $x -Y $y -Width $screen_width -Height $h -Passthru
     # strangely, on some monitors, the first Set-Window doesn't quite take, but setting it again seems to work
     Set-Window -ProcessId $app.Id -X $x -Y $y -Width $screen_width -Height $h -Passthru
+    $count++
 }

@@ -10,8 +10,14 @@ PowerShell module to make it easy to convert Excel worksheets to CSV files.  To 
 ## copy_mp3s_for_car.ps1
 This script reads an inventory file of my music catalog, applies whatever filters I want to it, and writes the results to a destination path such as a flash drive.  It works in conjunction with the script, *generate_music_inventory_file.ps1*.
 
+## copy_mp3s_for_car_v2.ps1
+A newer version of copy_mp3s_for_car.ps1 with a few additional features.
+
 ## generate_music_inventory_file.ps1
 This script is a modified version of the script, *organize_mp3s.ps1*.  The script basically has a single purpose: it inventories my digitized music and writes information on each song to a single JSON file.  Check out my [sample inventory file](../blob/master/sample_mp3_collection.json) for an example.
+
+## generate_music_inventory_file_v2.ps1
+A newer version of generate_music_inventory_file.ps1 with a few addtional features.
 
 ## launch_ubuntu_windows.ps1
 This is a quick and dirty script to launch a few WSL Ubuntu instances and position them nicely in the left-most
