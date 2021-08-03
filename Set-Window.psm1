@@ -97,7 +97,7 @@ Function Set-Window {
         If ($Return) {
             $Return = [Window]::MoveWindow($Handle, $x, $y, $Width, $Height,$True)
         }
-        If ($PSBoundParameters.ContainsKey('Passthru')) {
+        If ($Passthru.IsPresent) {
             $Rectangle = New-Object RECT
             $Return = [Window]::GetWindowRect($Handle,[ref]$Rectangle)
             If ($Return) {
