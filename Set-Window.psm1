@@ -88,10 +88,10 @@ Function Set-Window {
         $Rectangle = New-Object RECT
         $Handle = (Get-Process -Id $ProcessId).MainWindowHandle
         $Return = [Window]::GetWindowRect($Handle,[ref]$Rectangle)
-        If (-NOT $PSBoundParameters.ContainsKey('Width')) {            
+        If ($null -eq $Width) {            
             $Width = $Rectangle.Right - $Rectangle.Left            
         }
-        If (-NOT $PSBoundParameters.ContainsKey('Height')) {
+        If ($null -eq $Height) {
             $Height = $Rectangle.Bottom - $Rectangle.Top
         }
         If ($Return) {
