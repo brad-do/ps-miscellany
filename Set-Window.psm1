@@ -55,6 +55,7 @@ Function Set-Window {
     [cmdletbinding()]
     Param (
         [parameter(ValueFromPipelineByPropertyName=$True)]
+        [Alias('Id')]
         $ProcessId,
         [int]$X,
         [int]$Y,
