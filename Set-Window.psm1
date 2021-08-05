@@ -27,13 +27,16 @@ Function Set-Window {
             Display the output object of the window.
 
         .NOTES
+            Taken from https://github.com/brad-do/ps-miscellany/blob/master/Set-Window.psm1
+            [73ef6c4]...who appears to have taken it from:
+
             Name: Set-Window
             Author: Boe Prox
             Version History
                 1.0//Boe Prox - 11/24/2015
                     - Initial build
 
-        .OUTPUT
+        .OUTPUTS
             System.Automation.WindowInfo
 
         .EXAMPLE
@@ -52,6 +55,7 @@ Function Set-Window {
     [cmdletbinding()]
     Param (
         [parameter(ValueFromPipelineByPropertyName=$True)]
+        [Alias('Id')]
         $ProcessId,
         [int]$X,
         [int]$Y,
@@ -88,16 +92,16 @@ Function Set-Window {
         $Rectangle = New-Object RECT
         $Handle = (Get-Process -Id $ProcessId).MainWindowHandle
         $Return = [Window]::GetWindowRect($Handle,[ref]$Rectangle)
-        If (-NOT $PSBoundParameters.ContainsKey('Width')) {            
+        If ($null -eq $Width) {            
             $Width = $Rectangle.Right - $Rectangle.Left            
         }
-        If (-NOT $PSBoundParameters.ContainsKey('Height')) {
+        If ($null -eq $Height) {
             $Height = $Rectangle.Bottom - $Rectangle.Top
         }
         If ($Return) {
             $Return = [Window]::MoveWindow($Handle, $x, $y, $Width, $Height,$True)
         }
-        If ($PSBoundParameters.ContainsKey('Passthru')) {
+        If ($Passthru.IsPresent) {
             $Rectangle = New-Object RECT
             $Return = [Window]::GetWindowRect($Handle,[ref]$Rectangle)
             If ($Return) {
